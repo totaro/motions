@@ -1,4 +1,4 @@
-# Motions
+# Web Motions & Animations
 
 This is my playground/sandbox where I play with different kinds of web motions. Html/css/js/gsap
 
