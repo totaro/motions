@@ -155,6 +155,7 @@ const activateMagnet = (event) => {
     /*
     dngr.innerHTML = 'cursorX ' + event.clientX + '<br>boxleft: ' + Math.ceil(boundBox.left) + '<br>cursorInsideButton: ' + Math.ceil(event.clientX - boundBox.left) + '<br>relativeToTotalWidth: ' + ((event.clientX - boundBox.left)/magnet.offsetWidth).toFixed(2) + '<br>shifted: ' + ((event.clientX - boundBox.left)/magnet.offsetWidth - 0.5).toFixed(2)
     */
+
     //move button to its new position
     gsap.to(magnet, {
         duration: 1,
@@ -172,9 +173,8 @@ const activateMagnet = (event) => {
         ease: Power4.easeOut
 
     })
-
-
 }
+
 //mouse leave stuff
 const resetMagnet = (event) => {
     //move button to its default position
