@@ -1,6 +1,6 @@
 # Web Motions & Animations
 
-This is my playground/sandbox where I play with different kinds of web motions. Html/css/js/gsap
+This is my playground/sandbox where I play with different kinds of web motions and animations. Html/css/js/gsap
 
 Page includes following:
 - video background
