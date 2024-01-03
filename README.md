@@ -9,7 +9,7 @@ Page includes following:
 - keyframes animations
 - page preloader
 - spinner loader
-- text loadeer svg
+- text loader svg
 - animated loading button
 - typewriter effect
 - mouse follow effect
