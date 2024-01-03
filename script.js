@@ -1,17 +1,14 @@
-//preloader ---------------------------
+//preloader -------------------------------------------
 		
 const loaderContainer = document.querySelector('.loader-container')
-		
+
 window.addEventListener('load', () => {
     loaderContainer.classList.add('hidden')
-    
-
 })
 
 
-
-
 // gsap scrolltrigger ------------------------------------
+
 const entries = document.querySelectorAll('.entry')
 
 entries.forEach(entry => {
@@ -35,9 +32,7 @@ entries.forEach(entry => {
 })
 
 
-
-
-//lenis gsap
+//lenis gsap scrolltrigger
 /*
 const lenis = new Lenis()
 
@@ -50,12 +45,11 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 */
 
-//menu button toggle ----------------------------------
+//menu button toggle ---------------------------------------
+
 const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
-const menuLink1 = document.querySelector('#menu-link')
 const menuLinks = document.querySelectorAll('#menu-link')
-
 
 menuButton.addEventListener('click', () => {
     rootElement.toggleAttribute('menu-open')
@@ -63,41 +57,36 @@ menuButton.addEventListener('click', () => {
 
 var count = 0;
 menuLinks.forEach(menulink => {
-    
-    menulink.addEventListener('click', () => {
-        //console.log("Clicked! count:" + ++count);
-        rootElement.toggleAttribute('menu-open')
+     menulink.addEventListener('click', () => {
+    //console.log("Clicked! count:" + ++count);
+    rootElement.toggleAttribute('menu-open')
 })
-
-
 })
-
-
 
 // animated submit button --------------------------------------
 
 const submitButton = document.querySelector('#btn-submit')
 const submitButtonText = document.querySelector('#btn-submit .button--text')
 
-submitButton.addEventListener('click', (e) => {
+    submitButton.addEventListener('click', (e) => {
     
-    e.preventDefault()
+        e.preventDefault()
 
-    //add loading class
-    submitButton.classList.add('loading')
+        //add loading class
+        submitButton.classList.add('loading')
 
-    setTimeout(() => {
-        //remove loading class
-        submitButton.classList.remove('loading')
-        submitButton.classList.add('success')
+        setTimeout(() => {
+            //remove loading class
+            submitButton.classList.remove('loading')
+            submitButton.classList.add('success')
 
-        //change button text
-        submitButtonText.innerHTML = 'Login Successful'
+            //change button text
+            submitButtonText.innerHTML = 'Login Successful'
 
     }, 3000)
 })
 
-// typewriter effect ---------------------------------
+// typewriter effect --------------------------------------------
 
 const words = ['Style', 'Clarity', 'Passion', 'Precision']
 
@@ -131,7 +120,7 @@ words.forEach(word =>{
 
 })
 
-//blinkin cursor
+//blinkin cursor 
 let cursorTimeline = gsap.timeline({
     repeat: -1,
     repeatDelay: .8
@@ -163,9 +152,10 @@ const activateMagnet = (event) => {
     const newY = ((event.clientY - boundBox.top)/magnet.offsetHeight - 0.5)
 
     //debugging purposes
+    /*
     dngr.innerHTML = 'cursorX ' + event.clientX + '<br>boxleft: ' + Math.ceil(boundBox.left) + '<br>cursorInsideButton: ' + Math.ceil(event.clientX - boundBox.left) + '<br>relativeToTotalWidth: ' + ((event.clientX - boundBox.left)/magnet.offsetWidth).toFixed(2) + '<br>shifted: ' + ((event.clientX - boundBox.left)/magnet.offsetWidth - 0.5).toFixed(2)
-
-    //move button to its new posistion
+    */
+    //move button to its new position
     gsap.to(magnet, {
         duration: 1,
         x: newX * magnetStrength,
