@@ -14,3 +14,4 @@ Page includes following:
 - typewriter effect
 - mouse follow effect
 - sliding cards
+- change background color
