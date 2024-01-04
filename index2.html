@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Totaro - Motions</title>
+	<!--font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Reset -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+	
+	<!-- styles-->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- cards-->
+
+	<link rel="stylesheet" href="style_cards.css">
+	
+	
+</head>
+<body>
+	<div class="loader-container">
+		<div class="loader"></div>
+	</div>
+	<a id="top"></a>
+	<section id="hero">
+		<video autoplay muted loop>
+			<source src="videos/hero_bg_video.mp4" type="video/mp4">
+			<source src="videos/hero_bg_video.webm" type="video/webm">
+		</video>
+		<header>
+			
+			<button class="button" id="menu-button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav>
+				<ul>
+					<li class="has-submenu">
+						<a href="https://totaro.github.io/">Totaro <i class="fa-solid fa-arrow-turn-up"></i></a>
+
+						<ul>
+							<li>
+								<a href="https://totaro.github.io/">Click here to go Totaro portfolio page</a>
+							</li>
+							
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="menu-container">
+			<ul class="unstyled">
+				<li><a href="#spinnerloader" id="menu-link">Spinner Loader</a></li>
+				<li><a href="#textloader" id="menu-link">Text Loader</a></li>
+				<li><a href="#animatedbutton" id="menu-link">Animated Button</a></li>
+				<li><a href="#typewritereffect" id="menu-link">Typewriter Effect</a></li>
+				<li><a href="#mousefollow" id="menu-link">Mouse Follow</a></li>
+			</ul>
+		</div>
+
+		<div class="hero__content">
+			<h1>Making web motions with 
+				<span id="typewriter"></span>
+				<span id="cursor">|</span></h1>
+			<h3>This is my playground/sandbox where I play with different kinds of web motions and animations.</h3><h5>This page focus mainly on web motions and animations so is not fully responsive. Used techniques: html/css/js/gsap</h5>
+			
+		</div>
+		
+		<div id="scroll-down">
+			<p>Scroll Down</p>
+			<svg width="18" height="18" viewBox="0 0 12 12" >
+				<path  fill-rule="evenodd" clip-rule="evenodd" d="M11.0303 6.53033C11.3232 6.23744 11.3232 5.76256 11.0303 5.46967C10.7374 5.17678 10.2626 5.17678 9.96967 5.46967L6.75 8.68934L6.75 0.75C6.75 0.335786 6.41421 -2.11379e-07 6 -2.29485e-07C5.58579 -2.47591e-07 5.25 0.335786 5.25 0.75L5.25 8.68934L2.03033 5.46967C1.73744 5.17678 1.26256 5.17678 0.96967 5.46967C0.676777 5.76256 0.676777 6.23744 0.96967 6.53033L5.46967 11.0303C5.76256 11.3232 6.23744 11.3232 6.53033 11.0303L11.0303 6.53033Z"/>
+			</svg>
+			
+		</div>
+	</section>
+
+	<section id="portfolio">
+		<a id="spinnerloader"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#1</h6>
+				<h4>Spinner Loader</h4>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure class="entry__media">
+				<div class="loader"></div>
+				
+			</figure>
+		</div>
+		<a id="textloader"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#2</h6>
+				<h4>Text Loader SVG</h4>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure class="entry__media">
+				<div class="text_loader">
+				<svg viewBox="0 0 425 160">
+					<text x="50%" y="50%" dy=".32em" text-anchor="middle" class="text-body">
+						Animation
+					</text>
+					<text x="50%" y="50%" dy=".32em" dx="2.5em" text-anchor="middle" class="text-dot">
+						.
+					</text>
+				</svg>
+			</div>
+
+			</figure>
+		</div>
+		<a id="animatedbutton"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#3</h6>
+				<h4>Animated Button</h4>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure class="entry__media">
+				<div class="button-animation">
+					<button class="button" id="btn-submit">
+						<span class="button--text">Log In</span>
+		
+						<div class="button--loader">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						
+					</button>
+				</div>
+			</figure>
+		</div>
+		<a id="typewritereffect"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#4</h6>
+				<h4>Typewriter Effect</h4>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure class="entry__media">
+				
+					<h4>Making web motions with 
+					<span id="typewriter"></span>
+					<span id="cursor">|</span>
+				</h4>
+			</figure>
+		</div>
+		<a id="mousefollow"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#5</h6>
+				<h4>Mouse Follow</h4><br>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure class="entry__media">
+				
+				<button class="magnet">
+					<span class="text">Mouse Me!</span>
+				</button>
+				<div id="debugger"></div>
+				
+			</figure>
+			
+		</div>
+
+		<a id="slidingcards"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#6</h6>
+				<h4>Sliding Cards</h4><br>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure class="entry__media">
+				
+				<div class="card_container">
+					<input type="radio" name="slide" id="c1" checked>
+					<label for="c1" class="card">
+						<div class="row">
+							<div class="icon">1</div>
+							<div class="description">
+								<h4>Winter</h4>
+								<p>The coldest season of the year</p>
+							</div>
+						</div>
+					</label>
+					<input type="radio" name="slide" id="c2" >
+					<label for="c2" class="card">
+						<div class="row">
+							<div class="icon">2</div>
+							<div class="description">
+								<h4>Spring</h4>
+								<p>The season after winter and before summer</p>
+							</div>
+						</div>
+					</label>
+					<input type="radio" name="slide" id="c3" >
+					<label for="c3" class="card">
+						<div class="row">
+							<div class="icon">3</div>
+							<div class="description">
+								<h4>Summer</h4>
+								<p>The warmest season of the year</p>
+							</div>
+						</div>
+					</label>
+					<input type="radio" name="slide" id="c4" >
+					<label for="c4" class="card">
+						<div class="row">
+							<div class="icon">4</div>
+							<div class="description">
+								<h4>Autumn</h4>
+								<p>The season after summer and before winter</p>
+							</div>
+						</div>
+					</label>
+				</div>
+				
+			</figure>
+			
+		</div>
+
+		<a id="changebg"></a>
+		<div class="entry">
+			<div class="entry__meta">
+				<h6>Motion<span></span>#6</h6>
+				<h4>Change Background</h4><br>
+				<h5><ul class="inner-links">
+					<li><a href="#top">Top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				</ul>
+				</h5>
+			</div>
+			<figure id="change-bg" class="entry__media ">
+				
+				<button class="togglebutton">
+					Chance to light &nbsp; <i class="fa-solid fa-sun"></i>
+				  </button>
+				
+			</figure>
+			
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="footer__content">
+			<h2>Making web motions with 
+				<span id="typewriter"></span>
+				<span id="cursor">|</span></h2>
+			
+			<ul class="inner-links">
+				<li><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+				
+			</ul>
+		</div>
+
+		<p>&copy; 2024 Totaro</p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+	<script src="script.js"></script>
+	
+</body>
+</html>
