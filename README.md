@@ -13,3 +13,4 @@ Page includes following:
 - animated loading button
 - typewriter effect
 - mouse follow effect
+- sliding cards
