@@ -207,10 +207,10 @@ document.querySelector('.togglebutton').addEventListener('click', () => {
     
     document.getElementById("change-bg").classList.toggle("change-figure-bg");
   
-    const initialText = `Chance to light &nbsp; <i class="fa-solid fa-sun"></i>`;
+    const initialText = `Change background to light &nbsp; <i class="fa-solid fa-sun"></i>`;
 
     if (btn.innerHTML.toLowerCase().includes(initialText.toLowerCase())) {
-        btn.innerHTML = `Chance to dark &nbsp; <i class="fa-solid fa-moon">`;
+        btn.innerHTML = `Change background to dark &nbsp; <i class="fa-solid fa-moon">`;
     } else {
         btn.innerHTML = initialText;
     }
