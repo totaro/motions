@@ -199,7 +199,7 @@ const resetMagnet = (event) => {
 magnet.addEventListener('mousemove', activateMagnet)
 magnet.addEventListener('mouseleave', resetMagnet)
 
-// change background color --------------------------------------
+// change background and button color--------------------------------------
 
 const btn = document.querySelector('.togglebutton')
 
