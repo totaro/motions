@@ -82,11 +82,7 @@
 			margin: 0;
 		}
 
-		#typewriter,
-		 #cursor{
-			color: var(--color-accent);
-		}
-
+		
 		h6 {
 			color: var(--white-50);
 			font-size: 1.125rem;
@@ -99,7 +95,8 @@
 			min-height: 100dvh;
 		}
 
-		
+		/* video bg fading from bottom--------- */
+
 		#hero::after{
 			content:'';
 			position:absolute;
@@ -241,7 +238,8 @@
 
 		.entry {
 			display: grid;
-			grid-template-columns: .6fr 1.4fr;
+			/*grid-template-columns: .6fr 1.4fr;*/
+			grid-template-columns: .6fr 3fr;
 			align-items: center;
 			gap: 4rem;
 			margin-inline: 4rem;
@@ -255,7 +253,7 @@
 
 		.entry figure {
 			margin: 0;
-			padding: 6rem;
+			padding: 6rem 1.5rem 6rem 1.5rem;
 			/*background-color: var(--white-5);*/
 			display: flex;
 			justify-content: center;
@@ -287,7 +285,7 @@
 		}
 
 
-		/* sub menu ------------------------------------- */
+		/* sub menu --------------------------------------------------------- */
 
 		.has-submenu {
 			position: relative;
@@ -296,14 +294,6 @@
 			align-items: center;
 			justify-content: flex-start;
 		}
-
-			/*
-		.has-submenu::after {
-			content: url('icons/icon-arrow-down.svg');
-			opacity: .6;
-			height: 25px;
-		}
-		*/
 
 		.has-submenu:hover ul {
 			display: block;
@@ -329,14 +319,7 @@
 			min-width: 15rem;
 			border-radius: .5rem;
 		}
-		/*
-		.has-submenu ul a::after {
-			content: url(icons/icon-arrow-right.svg);
-			height: 17px;
-			opacity: 0;
-		}
-		*/
-
+		
 		.has-submenu ul a:hover {
 			
 			background-color: var(--color-submenu-bg-hover);
@@ -400,7 +383,7 @@
 			transition-timing-function: ease-in-out;
 		}
 
-		/* Menu button and container----------------------------------------*/
+		/* Menu container and button ----------------------------------------*/
 		#menu-container {
 			position: absolute;
 			inset: 0;
@@ -447,7 +430,7 @@
 
 		
 		
-		/* menu button ---------------*/
+		/* menu button -----*/
 		
 		.button {
 			appearance: none;
@@ -493,7 +476,7 @@
 			transform: translate3d(0,-6px, 0) rotate(-45deg);
 		}
 
-		/* Hero video background ---------------------------- */
+		/* ero video background ------------------------------------------------ */
 
 		video {
 			position: absolute;
@@ -505,7 +488,7 @@
 			z-index: -3;
 		}
 
-		/* scroll down */
+		/* hero scroll down effect --------------------------------------- */
 
 		#scroll-down {
 			color: var(--gray-80);
@@ -602,7 +585,7 @@
 		}
 
 
-		/* Loader text (svg) --------------------------------------- */
+		/* Loader text (svg) ------------------------------------------------------ */
 
 		.text_loader svg {
 			width: 20rem;
@@ -673,7 +656,7 @@
 		}
 
 
-		/* Button animation loader --------------------------- */
+		/* Button animation loader -------------------------------------------- */
 
 		.button-animation .button {
 			width: 100%;
@@ -757,8 +740,16 @@
 			cursor: wait;
 		}
 
+		/* typewriter and cursor ---------------------------------------------- */
+		
+		#typewriter,
+		#cursor{
+			color: var(--color-accent);
+		}
 
-		/* mouse follow ------------------------------------------*/
+
+		/* mouse follow ------------------------------------------------------*/
+		
 		#debugger {
 			display: none;
 			visibility: hidden;
