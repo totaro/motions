@@ -781,64 +781,51 @@
 			align-items: center;
 		}
 
-/* change bg and toggle button*/
+		/* change bg and toggle button ------------------------------------ */
 
-figure {
-    --accent-color: #1E90FF;
-    --background-color: #0C1229;
-    /*--text-color: rgb(223, 197, 197);*/
-    --text-color: rgb(189, 20, 20);
-    --button-text-color: var(--background-color);
-    /*--button-text-color: white;*/
-    --transition-delay: 1s;
-    /*background-color: #eeeeea;*/
-
-    --color-body: #0C1229;
+		figure {
+    		--accent-color: #1E90FF;
+    		--background-color: #0C1229;
+    		--button-text-color: var(--background-color);
+    		--transition-delay: 1s;
+    		--color-body: #0C1229;
 	
-	transition: var(--transition-delay);
-  background-color: var(--background-color);
-  color: var(--text-color);
+			transition: var(--transition-delay);
+  			background-color: var(--background-color);
+  			color: var(--text-color);
 
-  }
+  		}
 
-  .change-figure-bg {
+  		.change-figure-bg {
+  			--accent-color: #0C1229;;
+    		--background-color: #1E90FF;
+    		--text-color: white;
+  		}
 
-    --accent-color: #0C1229;;
-  /*--background-color: #333;*/
-    /*--background-color:  coral;*/
-    --background-color: #1E90FF;
-    --text-color: white;
-    
-    /*background-color: coral;*/
-    
-  }
-
- 
-.togglebutton {
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
+		.togglebutton {
+  			background-color: var(--accent-color);
+  			color: var(--button-text-color);
   
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			cursor: pointer;
+  			padding: 1rem 2rem;
+  			border-radius: 10px;
+  			margin: 1rem;
+  			border: none;
+  			outline: none;
+  			transition: var(--transition-delay);
+  			transform: scale(1);
+		}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  margin: 1rem;
-  border: none;
-  outline: none;
-  transition: var(--transition-delay);
-  transform: scale(1);
-}
+		.togglebutton .icon {
+  			margin-right: .5em;
+		}
 
-.togglebutton .icon {
-  margin-right: .5em;
-}
-
-.togglebutton:hover,
-.togglebutton:focus {
-  transform: scale(1.1);
-}
+		.togglebutton:hover,
+		.togglebutton:focus {
+  			transform: scale(1.1);
+		}
 
 	
