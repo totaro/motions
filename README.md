@@ -15,3 +15,4 @@ Page includes following:
 - mouse follow effect
 - sliding cards
 - change background color
+- animated background
