@@ -1101,8 +1101,6 @@
 			width:15rem;
 			background: tomato;
 			border-radius: 10px;
-			/* transition: 0.3s; */
-
 			animation: 2s linear infinite animateborder;
 		}
 		
@@ -1125,9 +1123,6 @@
 		
 		.animated_box2{
 			overflow: hidden;
-			/* transition: all .4s ease; */
-			transition: animation 2s ease;
-			
 		}
 		
 		.animated_box2::before{
@@ -1136,6 +1131,7 @@
 			height: 60%;
 			width:140%;
 			display: none;
+			transition: animation 2s ease;
 		}
 		
 		.animated_box2:hover::before{
@@ -1151,6 +1147,7 @@
 			position: absolute;
 			content: '';
 			inset:3px;
+			transition: inset 2s;
 			border-radius: 10px;
 			background: #243063;
 		}
