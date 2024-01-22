@@ -16,3 +16,4 @@ Page includes following:
 - sliding cards
 - change background color
 - animated background
+- border animation
