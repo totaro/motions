@@ -1073,6 +1073,7 @@
 			cursor:pointer;
 			word-wrap: break-word;
 			min-width: 0;
+			
 		}
 		span.animated_box_text
 		{
@@ -1100,7 +1101,8 @@
 			width:15rem;
 			background: tomato;
 			border-radius: 10px;
-			transition: 0.3s;
+			/* transition: 0.3s; */
+
 			animation: 2s linear infinite animateborder;
 		}
 		
@@ -1123,6 +1125,9 @@
 		
 		.animated_box2{
 			overflow: hidden;
+			/* transition: all .4s ease; */
+			transition: animation 2s ease;
+			
 		}
 		
 		.animated_box2::before{
@@ -1130,12 +1135,16 @@
 			content: '';
 			height: 60%;
 			width:140%;
-			background: white;
-			transform: rotate(22deg);
+			display: none;
 		}
 		
 		.animated_box2:hover::before{
+			
+			display:block;
+			background-color: #A51FF6;
+			transform: rotate(22deg);
 			animation: 2s linear infinite animateborder2;
+			
 		}
 
 		.animated_box2::after{
@@ -1147,11 +1156,13 @@
 		}
 
 		@keyframes animateborder2 {
-			from{
+			from{				
 				transform: rotate(0deg);
+				filter: hue-rotate(350deg);
 			}
 			to{
 				transform: rotate(360deg);
+				
 			}
 			
 		}
