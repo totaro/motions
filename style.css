@@ -1163,3 +1163,72 @@
 			}
 			
 		}
+
+
+		/* Scroll ticker -------------------------------------------- */
+
+		.stock-ticker {
+			font-size: 1.2rem;;
+			padding-block: 8px;
+			border-block: 1px solid white;
+			overflow: hidden;
+			user-select: none;
+		  
+			--gap: 20px;
+			display: flex;
+			gap: var(--gap);
+			max-width: 400px;
+		  }
+		  
+		  .stock-ticker ul {
+			list-style: none;
+			flex-shrink: 0;
+			min-width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: var(--gap);
+			margin: 0rem;
+			
+		  
+			animation: scroll 20s linear infinite;
+		  }
+		  
+		  .stock-ticker:hover ul {
+			animation-play-state: paused;
+		  }
+		  
+		  @keyframes scroll {
+			to {
+			  transform: translateX(calc(-100% - var(--gap)));
+			}
+		  }
+		  		  
+		  .stock-ticker .company,
+		  .stock-ticker .price {
+			font-weight: bold;
+			color: white
+		  }
+		  
+		  .stock-ticker .price {
+			margin-inline: 4px;
+		  }
+		  
+		  .stock-ticker .plus::before {
+			content: "↑";
+		  }
+		  
+		  .stock-ticker .minus::before {
+			content: "↓";
+		  }
+		  
+		  .stock-ticker .plus .change,
+		  .stock-ticker .plus::before {
+			color: #089933;
+		  }
+		  
+		  .stock-ticker .minus .change,
+		  .stock-ticker .minus::before {
+			color: #e92334;
+		  }
+		
