@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "label": "minus",
+    "company": "AAPL",
+    "price": "$169.38",
+    "change": "-3.31 (-1.917%)"
+  },
+  {
+    "id": 1,
+    "label": "plus",
+    "company": "MSFT",
+    "price": "$414.58",
+    "change": "+0.94 (+0.227%)"
+  },
+
+  {
+    "id": 2,
+    "label": "plus",
+    "company": "NVDA",
+    "price": "$874.15",
+    "change": "+14.14 (+1.644%)"
+  },
+{
+    "id": 3,
+    "label": "minus",
+    "company": "GOOG",
+    "price": "$156.00",
+    "change": "-0.33 (-0.211%)"
+  },
+{
+    "id": 4,
+    "label": "minus",
+    "company": "AMZN",
+    "price": "$183.32",
+    "change": "-0.30 (-0.163%)"
+  },{
+    "id": 5,
+    "label": "plus",
+    "company": "AVGO",
+    "price": "$1,329.06",
+    "change": "+18.37 (+1.402%)"
+  },{
+    "id": 6,
+    "label": "minus",
+    "company": "META",
+    "price": "$499.76",
+    "change": "-0.47 (-0.094%)"
+  },{
+    "id": 7,
+    "label": "plus",
+    "company": "MA",
+    "price": "$459.82",
+    "change": "+0.03 (+0.007%)"
+  },{
+    "id": 8,
+    "label": "minus",
+    "company": "TSLA",
+    "price": "$157.11",
+    "change": "-4.37 (-2.706%)"
+  }
+]
